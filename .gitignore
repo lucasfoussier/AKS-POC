@@ -1,101 +1,34 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+###> symfony/framework-bundle ###
+app/.env
+app/var/cache/*
+app/var/log/*
+app/var/db/*
+!app/var/db/.keep
+app/vendor/
+###< symfony/framework-bundle ###
 
-# C extensions
-*.so
+# Managed by Composer
+app/var/bootstrap.php.cache
+app/bin/*
+!app/bin/console
+!app/bin/symfony_requirements
 
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Assets and user uploads
+app/public/bundles/
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+.idea/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+###> friendsofphp/php-cs-fixer ###
+app/.php_cs
+app/.php_cs.cache
+###< friendsofphp/php-cs-fixer ###
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
+###> behat/symfony2-extension ###
+app/behat.yml
+###< behat/symfony2-extension ###
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# dotenv
-.env
-
-# virtualenv
-.venv
-venv/
-ENV/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
+###> symfony/web-server-bundle ###
+app/.web-server-pid
+###< symfony/web-server-bundle ###

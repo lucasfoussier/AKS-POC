@@ -1,0 +1,13 @@
+security:
+    encoders:
+        App\Entity\User: bcrypt
+    firewalls:
+        public:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
+        - { path: ^/user, roles: ROLE_USER }
+        - { path: ^/owner, roles: ROLE_OWNER }
+
+

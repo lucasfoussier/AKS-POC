@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  web:
+    build: ./
+    working_dir: /app
+    ports:
+      - 80:80
